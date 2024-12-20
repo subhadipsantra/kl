@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TravelCo - Your Travel Partner</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA9ImkxI0LXM19Jm-d7rcDnvgVmBCzjBnvbQ&s" alt="TravelCo Logo" width="80" height="80"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with TravelCo</h1>
+            <p>Your adventure begins here. Let us guide you to amazing destinations!</p>
+            <button onclick="scrollToServices()">Discover Our Services</button>
+        </div>
+    </section>
+
+   
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Vacation Packages</h3>
+                <p>Explore exciting vacation packages to exotic destinations.</p>
+            </div>
+            <div class="card">
+                <h3>Group Tours</h3>
+                <p>Join our group tours and make new friends along the way!</p>
+            </div>
+            <div class="card">
+                <h3>Luxury Travel</h3>
+                <p>Indulge in a luxurious travel experience with our exclusive services.</p>
+            </div>
+        </div>
+    </section>
+    
+
+     
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are TravelCo, a passionate team dedicated to providing unforgettable travel experiences. Our goal is to make every trip a once-in-a-lifetime adventure. With over 20 years of experience, we offer customized services to meet every traveler’s needs.</p>
+    </section>
+
+   
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelCo | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
